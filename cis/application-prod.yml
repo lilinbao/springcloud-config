@@ -1,6 +1,9 @@
 env: prod
 server:
   port: 8000
+cis:
+  server:
+    port: ${server.port}
 eureka:
   instance:
     hostname: localhost
