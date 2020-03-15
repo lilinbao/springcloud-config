@@ -1,9 +1,7 @@
 env: dev
-server:
-  port: 8000
 cis:
   server:
-    port: ${server.port}
+    port: 8000
 eureka:
   instance:
     hostname: localhost
