@@ -1,2 +1,10 @@
-
 env: cis-dev
+server:
+  port: 8001
+eureka:
+  instance:
+    hostname: localhost
+    virtual-host-name: user-service
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:7071/eureka
