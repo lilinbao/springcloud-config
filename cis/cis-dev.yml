@@ -9,3 +9,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://${eureka.instance.hostname}:7071/eureka
+spring:
+  datasource:
+    url: mysql://localhost:3306/customer
+    username: linbao
+    password: 123456
