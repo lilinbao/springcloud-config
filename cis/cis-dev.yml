@@ -13,6 +13,6 @@ spring:
   application:
     name: user-service
   datasource:
-    url: mysql://localhost:3306/customer
+    url: jdbc:mysql://localhost:3306/customer
     username: linbao
     password: 123456

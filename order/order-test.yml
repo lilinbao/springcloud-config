@@ -14,6 +14,6 @@ eureka:
     service-url:
       defaultZone: http://${eureka.instance.hostname}:7071/eureka
   datasource:
-    url: mysql://localhost:3306/order
+    url: jdbc:mysql://localhost:3306/order
     username: linbao
     password: 123456
