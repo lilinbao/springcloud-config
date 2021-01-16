@@ -1,11 +1,9 @@
 env: dev
-spring:
-  application:
-    name: order-service
-  profiles:
-    active: ${env}
 server:
   port: 8100
+order:
+  server:
+    port: ${server.port}
 eureka:
   instance:
     hostname: localhost
@@ -13,6 +11,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://${eureka.instance.hostname}:7071/eureka
+spring:
+  application:
+    name: order-service
   datasource:
     url: jdbc:mysql://localhost:3306/order
     username: linbao
